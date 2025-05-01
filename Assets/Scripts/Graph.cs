@@ -22,6 +22,7 @@ public class Graph : MonoBehaviour
             position.y = position.x * position.x; //Making y component a function, where you plug in x to get it's y coord
             point.localPosition = position; //Setting cube position to the aforementioned
             point.localScale = scale; //Setting scale to the initialized scale I did before the for loop
+            point.SetParent(transform, false);
         }
         
     }
